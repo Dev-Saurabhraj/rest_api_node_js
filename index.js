@@ -90,10 +90,11 @@ app.route("/api/users/:id").get(
 
 // })
 
-app.post('/api/users',async (req, res)=> {
-    const body = req.body 
-    if( !body.firstName || !body.lastName|| !body.gender|| !body.email){
-        return res.status(400).json({msg: "All fields are required"})
+app.post("/api/users", async (req, res)=> {
+    const body = req.body;
+
+    if( !body.firstName || !body.lastName|| !body.gender || !body.email){
+        return res.status(400).json({msg: "All fields are required"});
     }
 const result = await User.create({
     firstName: body.firstName,
