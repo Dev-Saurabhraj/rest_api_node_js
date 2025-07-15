@@ -1,0 +1,3 @@
+schema - Define the structue 
+     Schema - Model
+     Using Modle we do CRUD operations
