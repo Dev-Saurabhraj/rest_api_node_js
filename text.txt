@@ -1,3 +1,57 @@
 schema - Define the structue 
      Schema - Model
      Using Modle we do CRUD operations
+
+
+
+
+
+
+
+
+
+
+
+
+
+// app.get("/api/users", (req, res) => {
+//     return res.json(users);
+// })
+
+// //agar kai sare routes pe hame defferet requests karni hain to ham is tarah se karte hian pahle hi routes defiene kar dete hain
+//agar body ko direct console.log karenge to kuch bhi print nahi hoga usko
+//  print karne ke liye hame ek middle ware user kya hai user abhi ham plugin bol rhe hain
+// yha pe post man se req aayegi and print hogi uske bad users ki list me add ho jayegi or res me success and userlength send hogi 
+
+// app.post("/api/users", (req, res) => {
+
+//     const body = req.body;
+//     console.log(body);
+//     users.push({ id: users.length + 1, ...body });
+//     fs.writeFile("./MOCK_DATA.json", JSON.stringify(users), (err, data) => {
+//         return res.json({ status: "success", id: users.length });
+//     });
+
+// })
+
+
+
+
+
+
+// app.post("/api./users", (req, res)=>{
+//     //create new user
+//     return res.json({status: "Pending"})
+// })
+
+// // edit the user with id 
+
+// app.patch("/api./users/:id", (req, res)=>{
+//     return res.json({status: "Pending"})
+// })
+
+// // to delete the user with id 
+// app.delete("/api./users/:id", (req, res)=>{
+//     return res.json({status: "Pending"})
+// })
+
